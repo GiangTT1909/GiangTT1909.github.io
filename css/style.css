@@ -37,6 +37,70 @@ table {
     color: #999;
 }
 
+.loader-container {
+    position: fixed;
+    float: left;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    bottom: 0;
+    background: #2d2e2e;
+    z-index: 999999;
+}
+
+.loader-container .loader {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: auto;
+}
+
+#mask {
+    width: 200px;
+    height: 200px;
+    line-height: 200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#mask svg {
+    width: 64px;
+    height: 76px;
+}
+
+#mask svg .preloader-path {
+    stroke-linejoin: round;
+    fill: none;
+    stroke: #f1b200;
+    stroke-width: 1;
+    stroke-dasharray: 70 32;
+    -webkit-animation: preloader 1s infinite ease;
+    animation: preloader 1s infinite ease;
+}
+
+@-webkit-keyframes preloader {
+    from {
+        stroke-width: 0;
+        stroke-dashoffset: 0;
+    }
+    to {
+        stroke-width: 1;
+        stroke-dashoffset: 102px;
+    }
+}
+
+@keyframes preloader {
+    from {
+        stroke-width: 0;
+        stroke-dashoffset: 0;
+    }
+    to {
+        stroke-width: 1;
+        stroke-dashoffset: 102px;
+    }
+}
+
 
 /*-------- Navbar --------*/
 
