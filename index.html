@@ -5,25 +5,30 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
+    <script src="https://kit.fontawesome.com/2c55db574f.js" crossorigin="anonymous"></script>
     <!-- Bootstrap CSS -->
-    <script src="https://kit.fontawesome.com/561d0dd876.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <link rel="stylesheet" href="css/responsive.css">
     <link rel="stylesheet" href="css/section.css">
     <link rel="stylesheet" href="css/style.css">
-
-
-    <title>Hello, world!</title>
+    <title>Version3</title>
 </head>
 
-<body>
-    <!-- MENU BAR -->
+<body data-spy="scroll" data-target=".navbar" data-offset="100">
+    <!-- Preloader-->
+    <div class="loader-container">
+        <div class="loader">
+            <div id="mask">
+                <svg class="preloader-icon" width="34" height="38" viewbox="0 0 34 38">
+          <path class="preloader-path" stroke-dashoffset="0" d="M29.437 8.114L19.35 2.132c-1.473-.86-3.207-.86-4.68 0L4.153 8.114C2.68 8.974 1.5 10.56 1.5 12.28v11.964c0 1.718 1.22 3.306 2.69 4.165l10.404 5.98c1.47.86 3.362.86 4.834 0l9.97-5.98c1.472-.86 2.102-2.45 2.102-4.168V12.28c0-1.72-.59-3.306-2.063-4.166z"></path>
+        </svg>
+            </div>
+        </div>
+    </div>
+    <!--  Side Bar      -->
     <nav class="navbar navbar-expand-lg fixed-top navbar-dark">
         <div class="container-fluid">
-            <div class="col-md-3 purple-bg">
-                <a class="navbar-brand" href="index.html"></a>
-            </div>
+            <a class="navbar-brand mr-auto" href="#">GiangTT</a>
             <button id="btn-open-sidebar" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#sidebar" aria-expanded="false">
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
@@ -32,9 +37,16 @@
             <!-- Start: Sidebar -->
             <div id="sidebar" class="sidebar">
                 <ul class="nav navbar-nav menu">
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#aboutme">About me</a></li>
-                    <li><a href="#resume">Resume</a></li>
+                    <li><a href="#welcome">Welcome</a></li>
+                    <li><a href="#about">About me</a></li>
+                    <li><a href="#education">Education</a></li>
+
+                    <li><a href="#softskills">Soft skills</a></li>
+                    <li><a href="#technicalskills">Technical skills</a></li>
+
+                    <li><a href="#expertise">expertise</a></li>
+                    <li><a href="#experiences">Experiences</a></li>
+
 
                     <li><a href="#contact">Contact</a></li>
                 </ul>
@@ -42,254 +54,406 @@
             <!-- End: Sidebar -->
         </div>
     </nav>
-
-    <!--------Side block--------->
-    <div class="container side-block">
-        <div id="particles-js">
-            <!--<canvas class="particles-js-canvas-el" style="width: 100%; height: 100%;"></canvas> -->
-        </div>
-        <div id="particles-js">
-            <!--<canvas class="particles-js-canvas-el" style="width: 100%; height: 100%;"></canvas> -->
-        </div>
-    </div>
-
-    <!--   HOME    -->
-    <section id="all-body" class="all-body">
-        <div id="content" class="content" data-spy="scroll" data-target=".sidebar" data-offset="0">
-            <section id="home">
-                <div class="container-fluid Home">
-                    <div class="row">
-                        <div class="col-md-4">
-                            <div><img src="image/72608329_2443623272541876_273895991520788480_n.jpg" class="img-fluid" alt=""></div>
-                        </div>
-                        <div class="col-md-8">
-                            <div class="main-title">
-                                <small>This is my CV</small>
-                                <h1 class="display-4 iq-tw-8 iq-font-purple color home-title">HOME</h1>
-                            </div>
-                            <h1>Hello,</h1>
-                            <h1>I Am Tống Trường Giang</h1>
-                            <p>Student of FPT University </p>
-                            <p>Major: Software Engineer</p>
-                            <a class="button iq-mt-30" href="#aboutme">Download my CV</a>
-                        </div>
+    <!-- WELCOME SECTION-->
+    <section class="wel-section" id="welcome">
+        <div class="container">
+            <div class="row dark-bg">
+                <div class="col-md-12 col-lg-3 col-left pt">
+                    <div class="header-photo">
+                        <img class="rounded-circle" src="images/72608329_2443623272541876_273895991520788480_n.jpg" alt="Photo">
+                    </div>
+                    <div class="wel-social">
+                        <a href="https://www.facebook.com/tong.giang.5437/" target="_blank"><i class="fab fa-facebook-square"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-skype"></i></a>
                     </div>
                 </div>
-            </section>
-            <section id="aboutme">
-                <div class="container-fluid Aboutme">
-                    <div class="row">
-                        <div class="col-md-4">
-                            <div><img src="image/73057495_2551108191663364_838240890190299136_n.jpg" class="img-fluid" alt=""></div>
-                        </div>
-                        <div class="col-md-8 content-deta">
-                            <div class="main-title">
-                                <small>Know About Me</small>
-                                <h1 class="display-4 iq-tw-8 iq-font-purple">About Me</h1>
-                            </div>
-
-                            <ul class="contact-info">
-                                <li> <span class="iq-tw-6">Name :</span>Tống Giang</li>
-                                <li> <span class="iq-tw-6">Freelance :</span> Available</li>
-                                <li> <span class="iq-tw-6">Date of birth :</span> 19-09-2001</li>
-                                <li> <span class="iq-tw-6">Email :</span> <a href="#"><span style="color:#31d181" >giangtong09@gmail.com</span></a></li>
-                                <li> <span class="iq-tw-6">Phone :</span> (+84)-974-484-610</li>
-                                <li> <span class="iq-tw-6">Address :</span> FPT university</li>
-                                <li> <span class="iq-tw-6">Nationality :</span> Việt Nam</li>
-                                <li><span class="iq-tw-6">Gender :</span> Male</li>
-                                <li><span class="iq-tw-6">Marital Status :</span> Single</li>
-                                <li><span class="iq-tw-6">Work Status :</span> Web Designer</li>
-                            </ul>
-
-                            <a class="button" href="#resume">resume</a>
-
-
-
-                        </div>
+                <div class="col-md-12 col-lg-9 col-right wel-content">
+                    <h3 class="hello">Hello, I am</h3>
+                    <h1 class="name">TRUONG GIANG<br /><span>TONG</span></h1>
+                    <h2 class="expart">Front End &amp; Web Developer</h2>
+                    <div class="header-contact-infos">
+                        <div class="header-contact-info"><i class="fas fa-phone-alt fa-sm fa-fw"></i>0974 484 610</div>
+                        <a href="https://anhdt.dev" class="header-contact-info"><i class="fas fa-globe-asia fa-sm fa-fw"></i>giangtt.dev</a>
+                        <a href="" class="header-contact-info"><i class="far fa-envelope fa-sm fa-fw"></i>gitong09@gmail.com</a>
                     </div>
                 </div>
-                <section id="resume" class="resume">
-                    <div class="row">
-                        <div class="col-md-4"></div>
-                        <div class="col-md-8">
-                            <div class="main-title">
-                                <small>My Work Experience</small>
-                                <h1 class="display-4 iq-tw-8 iq-font-purple">Resume</h1>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="timeline">
-                        <div class="container1 left">
-                            <div class="content1">
-                                <h2>2020</h2>
-                                <p>Studying Java core, HTML/CSS at FPT university</p>
-                            </div>
-                        </div>
-                        <div class="container1 right">
-                            <div class="content1">
-                                <h2>2019</h2>
-                                <p>Studying C/C++ at FPT university</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="Skill">
-                        <div class="row">
-                            <div class="col-lg-6 col-md-6 col-md-6">
-                                <h3 class="title iq-tw-8 iq-mt-0">My Language skills</h3>
-                                <span>English</span>
-                                <span class="percent">70/100</span>
-                                <div class="progress" style="height: 8px;">
-                                    <div class="progress-bar bg-success" role="progressbar" style="width: 70%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-                                </div>
-                                <span>Japanese</span>
-                                <span class="percent">10/100</span>
-                                <div class="progress" style="height: 8px;">
-                                    <div class="progress-bar bg-success" role="progressbar" style="width: 10%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-                                </div>
-                                <span>Russian</span>
-                                <span class="percent">5/100</span>
-                                <div class="progress" style="height: 8px;">
-                                    <div class="progress-bar bg-success" role="progressbar" style="width: 5%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-                                </div>
-                                <span>German</span>
-                                <span class="percent">5/100</span>
-                                <div class="progress" style="height: 8px;">
-                                    <div class="progress-bar bg-success" role="progressbar" style="width: 5%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-                                </div>
-                            </div>
-
-                            <div class="col-lg-6 col-md-6 col-md-6">
-                                <h3 class="title iq-tw-8 iq-mt-0">My Technical skills</h3>
-                                <span>C/C++</span>
-                                <span class="percent">60/100</span>
-                                <div class="progress" style="height: 8px;">
-                                    <div class="progress-bar bg-success" role="progressbar" style="width: 60%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-                                </div>
-                                <span>Java</span>
-                                <span class="percent">60/100</span>
-                                <div class="progress" style="height: 8px;">
-                                    <div class="progress-bar bg-success" role="progressbar" style="width: 60%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-                                </div>
-                                <span>HTML</span>
-                                <span class="percent">60/100</span>
-                                <div class="progress" style="height: 8px;">
-                                    <div class="progress-bar bg-success" role="progressbar" style="width: 60%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-                                </div>
-                                <span>CSS</span>
-                                <span class="percent">60/100</span>
-                                <div class="progress" style="height: 8px;">
-                                    <div class="progress-bar bg-success" role="progressbar" style="width: 60%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-                <section id="contact">
-                    <div class="contact">
-                        <div class="row">
-                            <div class="col-md-4">
-                                <div class="main-title">
-                                    <small>My contact </small>
-                                    <h1 class="display-4 iq-tw-8 iq-font-purple" style="color: #31d181; font-weight: 500;">Contact</h1>
-                                    <div><img src="image/location.jpg" class="img-fluid" alt=""></div>
-                                </div>
-
-                            </div>
-                            <div class="col-md-8">
-                                <div class="row">
-                                    <div class="col-md-12">
-                                        <h3 class="title iq-tw-8 text-uppercase iq-mt-0">Get in Touch</h3>
-                                        <ul class="contact-info">
-                                            <li><i class="ti-location-pin"></i>
-                                                <p>FPT university</p>
-                                            </li>
-                                            <li><i class="ti-marker-alt"></i>
-                                                <p><a href="#" style="color: #31d181;">giangtong09@gmail.com</a> </p>
-                                            </li>
-                                            <li><i class="ti-mobile"></i>
-                                                <p>(+84)-874-484-610 </p>
-                                            </li>
-                                            <li><i class="ti-printer"></i>
-                                                <p>(+84)-868-724-938 </p>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                                <div class="iq-get-in">
-
-                                    <form class="form-horizontal" id="contactform" method="post" action="../php/contact-form.php">
-                                        <div class="contact-form row">
-                                            <div class="section-field col-md-4">
-                                                <input id="name" type="text" placeholder="Name*" name="name">
-                                            </div>
-                                            <div class="section-field col-md-4">
-                                                <input type="email" placeholder="Email*" name="email">
-                                            </div>
-                                            <div class="section-field col-md-4">
-                                                <input type="text" placeholder="Phone*" name="phone">
-                                            </div>
-                                            <div class="section-field textarea col-md-12">
-                                                <textarea class="input-message" placeholder="Comment*" rows="5" name="message"></textarea>
-                                            </div>
-                                            <div class="col-md-12">
-                                                <input type="hidden" name="action" value="sendEmail" />
-                                                <button id="submit" name="submit" type="submit" value="Send" class="button iq-mt-30">Send Message</button>
-                                            </div>
-                                        </div>
-                                    </form>
-                                    <div id="ajaxloader" style="display:none"><img class="center-block mt-30 mb-30" src="images/ajax-loader.gif" alt="#"></div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </section>
+            </div>
         </div>
+    </section>
 
-        </section>
+    <section id="about">
+        <div class="container about">
+            <div class="row dark-bg">
+                <div class="col-md-12 col-lg-3 col-left">
+                    <div class="sec-title">
+                        <h2 class="title1">About</h2>
+                        <h6 class="about-decribe">A little about me</h6>
+                    </div>
 
+                </div>
+                <div class="col-md-12 col-lg-9 col-right sec-pad">
+                    <div class="about-content">
+                        <p>Terrorblade is the demon marauder--an outlaw hellion whom even other demons fear. A cosmic iconoclast, he stole from the Demon Lords, ignored the codified rites that should have bound his behavior, and broke every law of the seven
+                            Infernal Regions. For his crimes, he was taught this lesson: even Hell has a hell. A short, brutal trial ensued, with many dead on all sides, and he was finally incarcerated in Foulfell, a hidden dimension where demonkind imprison
+                            their own. But Foulfell is no normal prison. In this dark mirror of reality, demons are sentenced to gaze eternally into the twisted reflection of their own souls. But instead of suffering, Terrorblade made himself master of
+                            his own reflected worst self--a raging, thieving demon of unimaginable power. With his inner beast under sway, he destroyed the fractal prison walls and burst free to turn his terror loose upon all creation.</p>
+                    </div>
+                </div>
+            </div>
         </div>
-
     </section>
 
 
-    <!-- Footer-->
-    <footer>
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-md-3">
-                    <p class="footer-copyright text-white">Copyright @ ilgnd</p>
+    <section id="education">
+        <div class="container education">
+            <div class="row dark-bg">
+                <div class="col-md-12 col-lg-3 col-left">
+                    <div class="sec-title">
+                        <h2 class="title1">Education</h2>
+                        <h6 class="about-decribe">I learnt a lot in my life</h6>
+                    </div>
+
                 </div>
-                <div class="col-md-9">
-                    <ul class="follow-us pull-right">
-                        <li>Follow Me :</li>
-                        <li><a href="https://www.facebook.com/tong.giang.5437/" target="_blank"><i class="fa fa-facebook"></i></a></li>
-                        <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                        <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
-                        <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-                        <li><a href="#"><i class="fa fa-pinterest"></i></a></li>
-                        <li><a href="#"><i class="fa fa-dribbble"></i></a></li>
-                    </ul>
+                <div class="col-md-12 col-lg-9 col-right sec-pad">
+                    <div class="education-content">
+                        <ul class="timeline">
+                            <li class="timeline-item">
+                                <div class="timeline-date"><span><i>Sep 2019 to now</i></span></div>
+                                <div class="timeline-content ex-content">
+                                    <h4 class="title">Software Engineering</h4>
+                                    <h5>FPT University</h5>
+                                    <p>www.fpt.edu.vn</p>
+                                </div>
+                            </li>
+                            <li class="timeline-item">
+                                <div class="timeline-date"><span><i>Sep 2016 to Sep 19</i></span></div>
+                                <div class="timeline-content ex-content">
+                                    <h4 class="title">Curriculum</h4>
+                                    <h5>Bien Hoa Gifted High School</h5>
+                                    <p></p>
+                                </div>
+                            </li>
+                        </ul>
+
+                    </div>
                 </div>
             </div>
-
         </div>
+    </section>
 
-    </footer>
+
+    <section id="softskills">
+        <div class="container soft-skills">
+            <div class="row dark-bg">
+                <div class="col-md-12 col-lg-3 col-left">
+                    <div class="sec-title">
+                        <h2 class="title1">Soft Skills</h2>
+                        <h6 class="about-decribe">Gaining from pain</h6>
+                    </div>
+
+                </div>
+                <div class="col-md-12 col-lg-9 col-right sec-pad">
+                    <div class="about-content">
+                        <p>Teamwork</p>
+                        <p>Management Skills</p>
+                        <p>Presentation</p>
+                        <p>Leader</p>
+                        <p>Selflearning</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <section id="technicalskills">
+        <div class="container technical-skills">
+            <div class="row dark-bg">
+                <div class="col-md-12 col-lg-3 col-left">
+                    <div class="sec-title">
+                        <h2 class="title1">Technical Skills</h2>
+                        <h6 class="about-decribe">Life long learning</h6>
+                    </div>
+
+                </div>
+                <div class="col-md-12 col-lg-9 col-right sec-pad">
+                    <div class="technical-skills-content">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="skill-icon"><i class="fab fa-java"></i></div>
+                                <div class="title-skill">
+                                    <h5>Language</h5>
+                                    <p>Java,JavaScript <br>C/C++ <br>HTML/CSS
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="skill-icon"><i class="fab fa-angular"></i></div>
+                                <div class="title-skill">
+                                    <h5>Framework</h5>
+                                    <p>Bootstrap <br>Angular <br>VueJS
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="skill-icon" style="font-size: 33px;"><i class="fas fa-desktop"></i></div>
+                                <div class="title-skill">
+                                    <h5>Operating Systems</h5>
+                                    <p>Windows <br>MacOs,Ubuntu
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="skill-icon"><i class="fas fa-database"></i></div>
+                                <div class="title-skill">
+                                    <h5>Database</h5>
+                                    <p>MySQL <br>Server <br>PostgreSQL
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="skill-icon"><i class="fab fa-pied-piper-square"></i></div>
+                                <div class="title-skill">
+                                    <h5>IDE</h5>
+                                    <p>Netbeans, Eclipse, IntelliJ <br> Visual Studio Code
+
+
+                                    </p>
+                                </div>
+
+                            </div>
+                            <div class="col-md-6">
+                                <div class="skill-icon"><i class="fab fa-github"></i></div>
+                                <div class="title-skill">
+                                    <h5>Tools</h5>
+                                    <p>Git, SVN Docker, Postman</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+
+
+    <section id="expertise">
+        <div class="container expertise">
+            <div class="row dark-bg">
+                <div class="col-md-12 col-lg-3 col-left">
+                    <div class="sec-title">
+                        <h2 class="title1">Technical Skills</h2>
+                        <h6 class="about-decribe">Life long learning</h6>
+                    </div>
+
+                </div>
+                <div class="col-md-12 col-lg-9 col-right sec-pad">
+                    <div class="technical-skills-content">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="skill-icon"><i class="fas fa-code" style="font-size: 30px;"></i></div>
+                                <div class="title-skill">
+                                    <h5>Front-end Developer </h5>
+                                    <p>HTML/CSS, Bootstrap,<br> JavaScript <br> AngularJS, VueJS
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="skill-icon"><i class="fas fa-code" style="font-size: 30px;"></i></div>
+                                <div class="title-skill">
+                                    <h5>back-end Developer</h5>
+                                    <p>Java, Spring Framework <br> NodeJS
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="skill-icon" style="font-size: 37px;"><i class="far fa-edit"></i></div>
+                                <div class="title-skill">
+                                    <h5>Web design</h5>
+                                    <p>HTML/CSS <br>Adobe XD
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="skill-icon"><i class="far fa-check-square"></i>
+                                </div>
+                                <div class="title-skill">
+                                    <h5>Test Design</h5>
+                                    <p>Functional Test Design <br> Integration Test Design
+                                    </p>
+                                </div>
+                            </div>
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+    <section id="experiences">
+        <div class="container education">
+            <div class="row dark-bg">
+                <div class="col-md-12 col-lg-3 col-left">
+                    <div class="sec-title">
+                        <h2 class="title1">experiences</h2>
+                        <h6 class="about-decribe">What I can bring to table</h6>
+                    </div>
+
+                </div>
+                <div class="col-md-12 col-lg-9 col-right sec-pad">
+                    <div class="education-content">
+                        <ul class="timeline">
+                            <li class="timeline-item">
+                                <div class="timeline-date"><span><i>Sep 2019 to now</i></span></div>
+                                <div class="timeline-content ex-content">
+                                    <h4 class="title">Software Engineering</h4>
+                                    <h5>FPT University</h5>
+                                    <p>www.fpt.edu.vn</p>
+                                </div>
+                            </li>
+                            <li class="timeline-item">
+                                <div class="timeline-date"><span><i>Sep 2016 to Sep 19</i></span></div>
+                                <div class="timeline-content ex-content">
+                                    <h4 class="title">Curriculum</h4>
+                                    <h5>Bien Hoa Gifted High School</h5>
+                                    <p></p>
+                                </div>
+                            </li>
+                        </ul>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="experiences">
+        <div class="container education">
+            <div class="row dark-bg">
+                <div class="col-md-12 col-lg-3 col-left">
+                    <div class="sec-title">
+                        <h2 class="title1">Contact</h2>
+                        <h6 class="about-decribe">Contact me</h6>
+                        <div class="main-title">
+
+
+                            <div><img src="images/location.jpg" class="img-fluid" style=" width : 300px; margin-top: 15px;" alt=""></div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-md-12 col-lg-9 col-right sec-pad">
+                    <div class="row">
+                        <div class="col-md-12">
+
+                            <ul class="contact-info">
+                                <li><i class="ti-location-pin"></i>
+                                    <p>FPT university</p>
+                                </li>
+                                <li><i class="ti-marker-alt"></i>
+                                    <p><a href="#" style="color: #f1b200;">giangtong09@gmail.com</a> </p>
+                                </li>
+                                <li><i class="ti-mobile"></i>
+                                    <p>(+84)-874-484-610 </p>
+                                </li>
+                                <li><i class="ti-printer"></i>
+                                    <p>(+84)-868-724-938 </p>
+                                </li>
+                            </ul>
+                            <div class="iq-get-in">
+
+                                <form class="form-horizontal" id="contactform" method="post" action="../php/contact-form.php">
+                                    <div class="contact-form row">
+                                        <div class="section-field col-md-4">
+                                            <input id="name" type="text" placeholder="Name*" name="name">
+                                        </div>
+                                        <div class="section-field col-md-4">
+                                            <input type="email" placeholder="Email*" name="email">
+                                        </div>
+                                        <div class="section-field col-md-4">
+                                            <input type="text" placeholder="Phone*" name="phone">
+                                        </div>
+                                        <div class="section-field textarea col-md-12">
+                                            <textarea class="input-message" placeholder="Comment*" rows="5" name="message"></textarea>
+                                        </div>
+                                        <div class="col-md-12">
+                                            <input type="hidden" name="action" value="sendEmail">
+                                            <button id="submit" name="submit" type="submit" value="Send" class="button iq-mt-30">Send Message</button>
+                                        </div>
+                                    </div>
+                                </form>
+                                <div id="ajaxloader" style="display:none"><img class="center-block mt-30 mb-30" src="images/ajax-loader.gif" alt="#"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="footer" class="footer">
+        <div class="container">
+            <div class="row dark-bg bg-color">
+                <div class="col-md-3 col-left pt-4 pb-4">
+                    <div class="text-right">
+                        <a href="">Copyright @ ilgnd </a>
+                    </div>
+                </div>
+                <div class="col-md-9 col-right pt-4 pb-4">
+                    <div class="text-right">
+                        <a href="#"><i class="fab fa-facebook-square mr-4" aria-hidden="true"></i></a>
+                        <a href="#"><i class="fab fa-linkedin mr-4" aria-hidden="true"></i></a>
+                        <a href="#"><i class="fab fa-skype" aria-hidden="true"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
-    <script src="js/p.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js " integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj " crossorigin="anonymous "></script>
-    <script type="text/javascript" src="js/jquery-min.js"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
 
+    <script>
+        $(document).ready(function() {
+            //Check to see if the window is top if not then display button
+            $(window).scroll(function() {
+                if ($(this).scrollTop() > 100) {
+                    $('.navbar').addClass("bg-dark");
+                } else {
+                    $('.navbar').removeClass("bg-dark");
+                }
+            });
+
+            /*------------- Smooth Scrolling --------------*/
+            $('.sidebar a').on('click', function(event) {
+                if (this.hash !== "") {
+                    event.preventDefault();
+                    var hash = this.hash;
+                    $('html, body').animate({
+                        scrollTop: $(hash).offset().top
+                    }, 1000, function() {
+                        window.location.hash = hash;
+                    });
+                }
+            });
+        });
+
+        /*------------- Preloader js --------------*/
+        $(window).on('load', function() { // makes sure the whole site is loaded
+            $('.loader-container').fadeOut(); // will first fade out the loading animation
+            $('.loader').delay(1500).fadeOut('slow'); // will fade out the white DIV that covers the website.
+            $('body').delay(1500).css({
+                'overflow': 'visible'
+            })
+        });
     </script>
 </body>
-
 
 </html>
