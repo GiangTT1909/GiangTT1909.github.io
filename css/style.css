@@ -578,3 +578,33 @@ section {
 .text-right i:hover {
     color: #f1b200;
 }
+
+.sec-title h2:before {
+    content: "";
+    width: 50px;
+    height: 5px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: #f1b200;
+  }
+  
+  .sec-title {
+    text-align: right;
+  }
+  
+  .sec-title.dk h2 {
+    color: #999;
+  }
+  
+  .sec-title h2 {
+    font: 500 23px "Poppins", sans-serif;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #666666;
+    position: relative;
+    padding-top: 28px;
+    line-height: 30px;
+    padding-bottom: 10px;
+  }
+  
